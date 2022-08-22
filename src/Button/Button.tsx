@@ -4,7 +4,7 @@ import './Button.css';
 export type TButtonProps = {
   onClick(): void;
   children: ReactNode;
-  variant?: 'primary' | 'success';
+  variant?: 'primary' | 'success' | 'warning';
   isDisabled?: boolean;
 };
 
