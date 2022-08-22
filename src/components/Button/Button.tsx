@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from 'react';
-import './Button.css';
+import { clsx } from 'clsx';
+import styles from './Button.module.css';
 
 export type TButtonProps = {
   onClick(): void;
@@ -14,9 +15,17 @@ const Button: FC<TButtonProps> = ({
   variant = 'primary',
   isDisabled = false,
 }) => {
-  const cn = `button button_${variant}`;
   return (
-    <button className={cn} onClick={onClick} disabled={isDisabled}>
+    <button
+      className={clsx({
+        [styles.button]: true,
+        [styles.button_primary]: variant === 'primary',
+        [styles.button_success]: variant === 'success',
+        [styles.button_warning]: variant === 'warning',
+      })}
+      onClick={onClick}
+      disabled={isDisabled}
+    >
       {children}
     </button>
   );

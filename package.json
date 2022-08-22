@@ -72,6 +72,7 @@
     "rollup-plugin-postcss": "^4.0.2",
     "semantic-release": "^19.0.3",
     "size-limit": "^8.0.1",
+    "storybook-css-modules": "^1.0.8",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
@@ -84,5 +85,8 @@
     "branches": [
       "main"
     ]
+  },
+  "dependencies": {
+    "clsx": "^1.2.1"
   }
 }
