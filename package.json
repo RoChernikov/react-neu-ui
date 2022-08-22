@@ -79,5 +79,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/RoChernikov/react-neu-ui.git"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
   }
 }
