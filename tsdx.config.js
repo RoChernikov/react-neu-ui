@@ -5,6 +5,9 @@ module.exports = {
   rollup(config, options) {
     config.plugins.push(
       postcss({
+        extract: false,
+        modules: true,
+        use: ['sass'],
         plugins: [
           autoprefixer(),
           cssnano({
