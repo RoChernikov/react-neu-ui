@@ -36,7 +36,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@ro/react-neu-ui",
+  "name": "@rochernikov/react-neu-ui",
   "author": "Rodion Chernikov",
   "module": "dist/react-neu-ui.esm.js",
   "size-limit": [
